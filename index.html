@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine ?!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&family=Pacifico&family=Merriweather:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="jabtak.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div id="container">
+        <div id="music-controls">
+            <button id="music-toggle">🎵 Play Music</button>
+        </div>
+        <div id="image-container"></div>
+        <div id="text-container">
+            <div id="poetry-section" class="hidden">
+                <h2>To the One Who Shaped My Sky</h2>
+                <div id="poetry-text"></div>
+                <button id="read-poetry">Read Poetry</button>
+            </div>
+            <div id="question">Will you be my valentine? 🥺</div>
+            <div id="options">
+                <button id="yes-button" onclick="selectOption('yes')">Yes</button>
+                <button id="no-button" onclick="selectOption('no')">No</button>
+            </div>
+            <div id="bonus-message" class="hidden">
+                Pretty please? 🥺
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
